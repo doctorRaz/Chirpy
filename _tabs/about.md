@@ -6,3 +6,10 @@ order: 4
 
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
 {: .prompt-tip }
+
+Нафига эта страничка и для чего вот это вот все
+
+|Table|test| example|
+|---|---|
+|тестовый | тучт| пример|
+ 

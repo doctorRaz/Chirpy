@@ -1,6 +1,6 @@
 ---
 title: nanoCAD. Установка без инсталлятора (En)
-author: drz
+author: doctorraz
 date: 2025-08-01 00:34:00 +0800
 categories: [nanoCAD, Tutorial, test]
 tags: [nanoCAD, tools]

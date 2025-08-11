@@ -1,7 +1,7 @@
 ---
 layout: page
 icon: fas fa-book
-order: 3
+order: 10
 ---
 
 <!-- markdownlint-disable MD033 MD041 -->

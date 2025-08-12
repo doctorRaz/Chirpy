@@ -5,17 +5,16 @@ order: 8
 
 layout: books
 books:
-  - title: "FileOpenClose.NET"
-    author: drz
-    link: "https://github.com/doctorRaz/Collection-of-nanoCAD-API-bugs"
+  - title: "MenuFilesGen (Fork)"
+    author: doctorraz
+    link: "https://github.com/doctorRaz/MenuFilesGen"
     thumbnail: "https://github.com/doctorRaz/MenuFilesGen/wiki/img/HideCommand_menu.png"
     reviewed_at: 12.08.2025 
     rating: 4
     description:
-      - drz_FileOpenClose пакетное открытие в граф редакторе 
-      - nc25 падает после пакетной обработки файлов в графическом редакторе
-      - https://forum.nanocad.ru/discussion/797/neustranimaya-oshibka#latest
-  - title: "랭체인으로 실현하는 LLM 아키텍처"
+     - приложение .NET для Windows, которое автоматизирует создание файлов конфигурации меню и ленты в nanoCAD. Система преобразует структурированные входные данные из электронных таблиц и текстовых файлов в специальные форматы конфигурации, необходимые для программного обеспечения nanoCAD, что избавляет от необходимости вручную создавать интерфейсы меню.
+     - создает .cfg файлов, содержащих определения меню, панели инструментов и ускорителей
+	 - создаёт .cuix архивных файлов со спецификациями ленточного интерфейса на основе XML
     author: 조대협
     link: "https://product.kyobobook.co.kr/detail/S000213921986"
     thumbnail: "https://forum.nanocad.ru/uploads/JRSR7ET6T6D8/image.png"

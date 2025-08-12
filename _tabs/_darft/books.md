@@ -1,6 +1,6 @@
 ---
 # the default layout is 'page'
-icon:  fa-whiteboard fa-semibold fa-eye
+icon: fas fa-book
 order: 8
 
 layout: books

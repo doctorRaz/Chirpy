@@ -16,7 +16,7 @@ timezone: Asia/Shanghai
 
 title: Кладовка хомяка # the main title
 
-tagline: Тащу сюда все, что надо и не надо # it will display as the subtitle
+tagline: Тащу все подряд. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Записная книжка.

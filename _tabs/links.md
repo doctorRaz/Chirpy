@@ -12,22 +12,22 @@ order: 40
 
 
 
-## nanoCAD
+## nanoCAD (СПДС)
 
+- [SPDS.ru](https://spds.ru)
+- [DWG.RU -> ПО от CSoft](https://forum.dwg.ru/forumdisplay.php?f=53)
+- [Форум нанокад](https://forum.nanocad.ru)
+- [Сообщество пользователей СПДС (блоги)](https://blog.spds.ru/)
+- [Сапр-журнал -> Уроки СПДС](https://sapr-journal.ru/uroki-spds-graphics/)
 
 
 
 
 ## Developers
 
+- [ADN Open CIS](https://adn-cis.org/)
 
 ## Friends
- 
 
 - [AutoLISP / VisualLISP](https://autolisp.ru/)
-- [SPDS.ru](https://spds.ru)
-- [Сообщество пользователей СПДС (блоги)](https://blog.spds.ru/)
-- [Форум нанокад](https://forum.nanocad.ru)
-- [DWG.RU -> ПО от CSoft](https://forum.dwg.ru/forumdisplay.php?f=53)
-- [Сапр-журнал -> Уроки СПДС](https://sapr-journal.ru/uroki-spds-graphics/)
 - [Конструктив 54](https://konstruktiv54.blogspot.ru/)

@@ -18,7 +18,7 @@ books:
   - title: "랭체인으로 실현하는 LLM 아키텍처"
     author: 조대협
     link: "https://product.kyobobook.co.kr/detail/S000213921986"
-    thumbnail: "https://i.imgur.com/NPZWvc6.png"
+    thumbnail: "https://forum.nanocad.ru/uploads/JRSR7ET6T6D8/image.png"
     reviewed_at: Jan 12, 2025 
     rating: 3
     description:

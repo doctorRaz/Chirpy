@@ -25,10 +25,9 @@ order: 40
  
 
 - [AutoLISP / VisualLISP](https://autolisp.ru/)
-- [SPDS.ru](http://spds.ru)
-- [Сообщество пользователей СПДС (блоги)](http://blog.spds.ru/)
-- [Форум нанокад](http://forum.nanocad.ru)
-- [DWG.RU -> ПО от CSoft](http://forum.dwg.ru/forumdisplay.php?f=53)
-- [Пользователи СПДС GraphiCS](https://plus.google.com/u/0/communities/103364426530995084996)
-- [Сапр-журнал -> Уроки СПДС](http://sapr-journal.ru/uroki-spds-graphics/)
-- [Конструктив 54](http://konstruktiv54.blogspot.ru/)
+- [SPDS.ru](https://spds.ru)
+- [Сообщество пользователей СПДС (блоги)](https://blog.spds.ru/)
+- [Форум нанокад](https://forum.nanocad.ru)
+- [DWG.RU -> ПО от CSoft](https://forum.dwg.ru/forumdisplay.php?f=53)
+- [Сапр-журнал -> Уроки СПДС](https://sapr-journal.ru/uroki-spds-graphics/)
+- [Конструктив 54](https://konstruktiv54.blogspot.ru/)

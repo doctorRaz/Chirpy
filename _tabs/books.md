@@ -1,6 +1,6 @@
 ---
 # the default layout is 'page'
-icon: fas fa-eye
+icon: fas fa-cubes
 order: 8
 
 layout: books

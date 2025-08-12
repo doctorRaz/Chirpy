@@ -24,36 +24,7 @@ layout: page
                 <a href="{{ book.link | relative_url }}" target="_blank">{{ book.title }}</a>
               </h2>
               <div class="author">
-               
-			       <div class="d-flex justify-content-between">
-        <!-- author(s) -->
-        <span>
-          {% if page.author %}
-            {% assign authors = book.author %}
-          {% elsif page.authors %}
-            {% assign authors = book.authors %}
-          {% endif %}
-
-          {{ site.data.locales[lang].book.written_by }}
-
-          <em>
-            {% if authors %}
-              {% for author in authors %}
-                {% if site.data.authors[author].url -%}
-                  <a href="{{ site.data.authors[author].url }}">{{ site.data.authors[author].name }}</a>
-                {%- else -%}
-                  {{ site.data.authors[author].name }}
-                {%- endif %}
-                {% unless forloop.last %}{{ '</em>, <em>' }}{% endunless %}
-              {% endfor %}
-            {% else %}
-              <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>
-            {% endif %}
-          </em>
-        </span>
-
-        <div>
-			   
+                <p>{{ book.author }}</p>
               </div>
               <div class="reviewed_at">
                 <p>{{ book.reviewed_at }}</p>

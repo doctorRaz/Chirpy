@@ -97,13 +97,15 @@ theme_mode: # [light | dark]
 #
 # e.g. 'https://cdn.com'
 # cdn: "https://chirpy-img.netlify.app"
-cdn: "https://doctorraz.github.io/Chirpy/assets/img/psyduck.png"
+cdn: 
 
 # the avatar on sidebar, support local or CORS resources
 # avatar: "/assets/img/homa.png"
 # avatar: "/Chirpy/assets/img/psyduck.png"
 # avatar: "{{ root_url | prepend: site.baseurl}}/assets/img/psyduck.png"
 avatar: "http://doctorraz.github.io/Chirpy/assets/img/psyduck.png"
+# avatar: "http://doctorraz.github.io/Chirpy/assets/img/psyduck.png"
+avatar: './assets/img/avatar.png'
 # avatar: "/commons/avatar.jpg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.

@@ -9,7 +9,7 @@
 
 .book-entry {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 270px 1fr;
   gap: 1.5rem;
   padding-bottom: 15px;
   position: relative;

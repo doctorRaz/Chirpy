@@ -12,10 +12,10 @@ books:
     reviewed_at: 12.08.2025 
     rating: 4
     description:
-      1. FileOpenClose.NET
-	     drz_FileOpenClose` пакетное открытие в граф редакторе 
-	     nc25 падает после пакетной обработки файлов в графическом редакторе
-	      https://forum.nanocad.ru/discussion/797/neustranimaya-oshibka#latest	
+      - 1. FileOpenClose.NET
+	    - drz_FileOpenClose пакетное открытие в граф редакторе 
+	    - nc25 падает после пакетной обработки файлов в графическом редакторе
+	     - https://forum.nanocad.ru/discussion/797/neustranimaya-oshibka#latest	
   - title: "랭체인으로 실현하는 LLM 아키텍처"
     author: 조대협
     link: "https://product.kyobobook.co.kr/detail/S000213921986"

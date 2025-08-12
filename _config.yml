@@ -104,7 +104,7 @@ cdn: "https://chirpy-img.netlify.app"
 # avatar: "/Chirpy/assets/img/psyduck.png"
 # avatar: "{{ root_url | prepend: site.baseurl}}/assets/img/psyduck.png"
 # avatar: "https://doctorraz.github.io/Chirpy/assets/img/psyduck.png"
-# avatar: "https://doctorraz.github.io/Chirpy/assets/img/homa.png"
+avatar: "https://doctorraz.github.io/Chirpy/assets/img/homa.png"
 # avatar: "{{ root_url | prepend: site.baseurl}}/assets/img/psyduck.png"
 # avatar: "/commons/avatar.jpg"
 

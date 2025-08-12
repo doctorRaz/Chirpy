@@ -103,8 +103,8 @@ cdn:
 # avatar: "/assets/img/homa.png"
 # avatar: "/Chirpy/assets/img/psyduck.png"
 # avatar: "{{ root_url | prepend: site.baseurl}}/assets/img/psyduck.png"
-avatar: "http://doctorraz.github.io/Chirpy/assets/img/psyduck.png"
 # avatar: "http://doctorraz.github.io/Chirpy/assets/img/psyduck.png"
+# avatar: "http://doctorraz.github.io/Chirpy/assets/img/homa.png"
 avatar: {{ root_url | prepend: site.baseurl}}/assets/img/avatar.png
 # avatar: "/commons/avatar.jpg"
 

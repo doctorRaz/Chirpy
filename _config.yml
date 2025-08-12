@@ -96,15 +96,15 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-# cdn: "https://chirpy-img.netlify.app"
-cdn: 
+cdn: "https://chirpy-img.netlify.app"
+# cdn: 
 
 # the avatar on sidebar, support local or CORS resources
 # avatar: "/assets/img/homa.png"
 # avatar: "/Chirpy/assets/img/psyduck.png"
 # avatar: "{{ root_url | prepend: site.baseurl}}/assets/img/psyduck.png"
-# avatar: "http://doctorraz.github.io/Chirpy/assets/img/psyduck.png"
-avatar: "http://doctorraz.github.io/Chirpy/assets/img/homa.png"
+avatar: "https://doctorraz.github.io/Chirpy/assets/img/psyduck.png"
+# avatar: "https://doctorraz.github.io/Chirpy/assets/img/homa.png"
 # avatar: {{ root_url | prepend: site.baseurl}}/assets/img/avatar.png
 # avatar: "/commons/avatar.jpg"
 

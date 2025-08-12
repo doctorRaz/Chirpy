@@ -10,7 +10,7 @@ layout: page
     <link rel="stylesheet" href="{{ "/assets/css/book-review.css" | relative_url }}">
   </head>
   <body>
-    <p>본 페이지에는 지금까지 읽어왔던 책에 대한 짧은 리뷰를 남깁니다.</p>
+    <p>Реализованные проекты</p>
     <hr>
     <div class="book-review">
       {% for book in page.books %}
@@ -24,7 +24,36 @@ layout: page
                 <a href="{{ book.link | relative_url }}" target="_blank">{{ book.title }}</a>
               </h2>
               <div class="author">
-                <p>{{ book.author }}</p>
+               
+			       <div class="d-flex justify-content-between">
+        <!-- author(s) -->
+        <span>
+          {% if page.author %}
+            {% assign authors = book.author %}
+          {% elsif page.authors %}
+            {% assign authors = book.authors %}
+          {% endif %}
+
+          {{ site.data.locales[lang].book.written_by }}
+
+          <em>
+            {% if authors %}
+              {% for author in authors %}
+                {% if site.data.authors[author].url -%}
+                  <a href="{{ site.data.authors[author].url }}">{{ site.data.authors[author].name }}</a>
+                {%- else -%}
+                  {{ site.data.authors[author].name }}
+                {%- endif %}
+                {% unless forloop.last %}{{ '</em>, <em>' }}{% endunless %}
+              {% endfor %}
+            {% else %}
+              <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>
+            {% endif %}
+          </em>
+        </span>
+
+        <div>
+			   
               </div>
               <div class="reviewed_at">
                 <p>{{ book.reviewed_at }}</p>

@@ -101,7 +101,8 @@ cdn: "https://chirpy-img.netlify.app"
 # the avatar on sidebar, support local or CORS resources
 # avatar: "/assets/img/homa.png"
 # avatar: "/Chirpy/assets/img/psyduck.png"
-avatar: "{{ root_url | prepend: site.baseurl}}/assets/img/psyduck.png"
+# avatar: "{{ root_url | prepend: site.baseurl}}/assets/img/psyduck.png"
+avatar: "https://doctorraz.github.io/Chirpy/assets/img/psyduck.png"
 # avatar: "/commons/avatar.jpg"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.

@@ -10,6 +10,8 @@ hidden: false
 media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 ---
 
+<p>Для вывода текста на экран в Python используется функция <samp>print()</samp>.</p>
+
 ## Печать для СПДС CS (PlotSPDS) FAQ
 
 #### <kbd>Стили печати</kbd>

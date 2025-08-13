@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 100
 ---
 
-> About пока написан
+> About пока не написан
 {: .prompt-info }
  
  

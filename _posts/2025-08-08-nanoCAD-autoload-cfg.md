@@ -17,30 +17,32 @@ media_subpath: '/assets/img/posts/2025-08-08-autoload-cfg'
 Самый очевидный и простой способ загрузки меню в nanoCAD 
 
 ![НПИ](npi.png)
+_Настройки пользовательского интерфейса_
 
 > ![частичный](partial.png){: width="972" height="589" .w-50 .left}
 > В nanoCAD есть древняя бага,  при подключении частичного файла меню \
 > nanoCAD скопирует файл \*.cfg в каталог `%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ.х\config\`
 > а файл \*.cuix ленты нет, соответственно лента не будет подгружена. \
-> Все же разбрасывать по всему диску фалы конфигураций, настройки ленты и сами аддоны не есть хорошо (
 {: .prompt-warning }
 
 #### 2. Ручная правка nanoCAD.cfg
 
 Дописать в файл настроек _%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ\config\nanoCAD.cfg_ путь к файлу конфигурации: \
-`#include "d:\@Developers\Programmers\!NET\!bundle\BlockFix.bundle\Resources\BlockFix.cfg"`
+```
+#include "d:\@Developers\Programmers\!NET\!bundle\BlockFix.bundle\Resources\BlockFix.cfg"
+```
 
 ####  3. Автозагрузка из \*.cfg  nanoCAD
 
- <img width="783"   alt="image" src="https://github.com/user-attachments/assets/b4ab4017-405a-4eee-a4e2-8b8ca6bc6158" />
+![загрузка/выгрузка](load-unload.png)
 
- <img width="607"   alt="image" src="https://github.com/user-attachments/assets/5fbe4fd1-b9e7-4ccd-9529-d520b648ef87" />
-
+![автозагрузка](autoload.png)
 
 > nanoCAD не умеет напрямую из автозагрузки грузить файлы \*.cfg, поэтому нужен промежуточный файл .package (в кодировке UTF8).
 > в в секции:
 > - `ConfigEntry` прописываем пути к файлам меню (\*.cfg )
 > - `ComponentEntry` пути к загружаемым приложениям:
+> 
 > ```xml
 > <?xml version="1.0" encoding="utf-8" ?>
 > <ApplicationPackage xmlns="hostApplicationPackage/v01"

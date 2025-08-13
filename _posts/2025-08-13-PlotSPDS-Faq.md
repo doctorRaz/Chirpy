@@ -6,9 +6,12 @@ date: 2025-08-12 11:33:00 +0800
 categories: [PlotSPDS, others]
 tags: [autocad, plotspds]
 pin: true
-hidden: false
+hidden: true 
 media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 ---
+
+> статья сильно не закончена!
+{: .prompt-danger }
 
 ###  Стили печати 
 
@@ -104,18 +107,6 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > </p>
 > </details> 
 {: .prompt-info }
-
-
-
-
- 
-
- 
-
- 
-
-
-
 
 
 
@@ -1193,13 +1184,13 @@ doctorraz30 декабря 2022 г. в 20:54
 
 Ответить
 
+-->
 
-
-‹
-›
+ 
 Главная страница
 Открыть веб-версию
 Обо мне
 doctorraz
 Просмотреть профиль
 Технологии Blogger.
+

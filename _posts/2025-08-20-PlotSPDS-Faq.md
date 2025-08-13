@@ -2,7 +2,7 @@
 title: PlotSPDS (FAQ)
 description: Ответы на частые вопросы
 author: doctorraz
-date: 2025-08-20 11:33:00 +0800
+date: 2026-08-20 11:33:00 +0800
 categories: [PlotSPDS, others]
 tags: [nanocad, autocad, plotspds]
 pin: false

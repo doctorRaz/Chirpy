@@ -102,8 +102,12 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > <li> Прописать каталог программы печати в путях поиска AutoCAD </li>
 > <li> Для запуска программы из среды AutoCAD применить такой lisp:<br/>
 > (defun C:пч () (startapp "PlotSPDS.exe") (princ))</li>
-> <ol>
+> </ol>
 >
+> <!-- markdownlint-enable -->
+> ```csharp
+> string str="test"
+> ```
 > </p>
 > </details> 
 {: .prompt-info }
@@ -1185,12 +1189,4 @@ doctorraz30 декабря 2022 г. в 20:54
 Ответить
 
 -->
-
- 
-Главная страница
-Открыть веб-версию
-Обо мне
-doctorraz
-Просмотреть профиль
-Технологии Blogger.
 

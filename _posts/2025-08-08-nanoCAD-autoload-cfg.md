@@ -19,19 +19,18 @@ media_subpath: '/assets/img/posts/2025-08-08-autoload-cfg'
 ![НПИ](npi.png)
 _Настройки пользовательского интерфейса_
 
-| | |
-|:--|:--|
-|![частичный](partial.png){: .w-50}|  
+> ![частичный](partial.png){: width="972" height="589" .w-30 .left}
 > В nanoCAD есть древняя бага,  при подключении частичного файла меню \
 > nanoCAD скопирует файл \*.cfg в каталог `%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ.х\config\`
 > а файл \*.cuix ленты нет, соответственно лента не будет подгружена. \
-{: .prompt-warning }|
----
+{: .prompt-warning }
+
 
 #### 2. Ручная правка nanoCAD.cfg
 
-Дописать в файл настроек _%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ\config\nanoCAD.cfg_ путь к файлу конфигурации: \
-```
+Дописать в файл настроек _%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ\config\nanoCAD.cfg_ путь к файлу конфигурации: 
+
+```cfg
 #include "d:\@Developers\Programmers\!NET\!bundle\BlockFix.bundle\Resources\BlockFix.cfg"
 ```
 

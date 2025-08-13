@@ -1,6 +1,6 @@
 ---
 title: Как загрузить свое меню и ленту в nanoCAD
-description: Несколько способов загрузки меню и ленты
+description: Несколько способов загрузки
 author: doctorraz
 date: 2025-08-08 11:10:00 +0800
 pin: true
@@ -18,7 +18,7 @@ media_subpath: '/assets/img/posts/2025-08-08-autoload-cfg'
 
 ![НПИ](нпи.png)
 
-<img width="519"   alt="image" src="https://github.com/user-attachments/assets/70cbdd1e-fe13-4522-83a5-96b2a4f01aa9" />
+![частичный](частичный.png){: .w-50 .left}
 
 > В nanoCAD есть древняя бага,  при подключении частичного файла меню \
 > nanoCAD скопирует файл \*.cfg в каталог `%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ.х\config\`

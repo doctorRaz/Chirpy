@@ -22,7 +22,7 @@ media_subpath: '/assets/img/posts/2025-08-08-autoload'
 > В nanoCAD есть древняя бага,  при подключении частичного файла меню \
 > nanoCAD скопирует файл \*.cfg в каталог `%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ.х\config\`
 > а файл \*.cuix ленты нет, соответственно лента не будет подгружена. \
-> Все же разбрасывать по всему диску фалы конфигов, настройки ленты и сами аддоны не есть хорошо (
+> Все же разбрасывать по всему диску фалы конфигураций, настройки ленты и сами аддоны не есть хорошо (
 {: .prompt-warning }
 
 #### 2. Ручная правка nanoCAD.cfg
@@ -37,7 +37,10 @@ media_subpath: '/assets/img/posts/2025-08-08-autoload'
  <img width="607"   alt="image" src="https://github.com/user-attachments/assets/5fbe4fd1-b9e7-4ccd-9529-d520b648ef87" />
 
 
-> nanoCAD не умеет напрямую из автозагрузки грузить файлы \*.cfg, поэтому нужен промежуточный файл .package (в кодировке UTF8), в котором в секции `ConfigEntry` прописываем пути к файлам меню (\*.cfg ), в секции `ComponentEntry` пути к загружаемым приложениям:
+> nanoCAD не умеет напрямую из автозагрузки грузить файлы \*.cfg, поэтому нужен промежуточный файл .package (в кодировке UTF8).
+> в в секции:
+> - `ConfigEntry` прописываем пути к файлам меню (\*.cfg )
+> - `ComponentEntry` пути к загружаемым приложениям:
 > ```xml
 > <?xml version="1.0" encoding="utf-8" ?>
 > <ApplicationPackage xmlns="hostApplicationPackage/v01"
@@ -130,14 +133,14 @@ _nApp.cfg_ или _userdata.cfg_ можно скопировать в любой
 #include condition="not ComponentEnabled_RasterTools"                             "RasterTools.cfg"
 ```
 
-2. <kbd>HKEY_LOCAL_MACHINE\SOFTWARE\Nanosoft\nanoCAD x64\ХХ.х\Applications\</kbd> (из реестра)
+2. `HKEY_LOCAL_MACHINE\SOFTWARE\Nanosoft\nanoCAD x64\ХХ.х\Applications\` (из реестра)
 меню будет загружаться во все профили, но в автозагрузке (из под профиля) меню можно отключить
 
 <img width="607"   alt="image" src="https://github.com/user-attachments/assets/03d695dc-4ff2-4060-b4f4-e898026af405" />
 
 3. Штатная автозагрузка (%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ\config\cfg.cfg) загрузит меню только в свой профиль
 
-Пути к файлам меню (\*.cfg) могут быть как абсолютными, так и относительными. Относительный путь отсчитывается от файла в котором прописан путь к конфигу.
-Регистр символов не важен.
+> Пути к файлам меню (\*.cfg) могут быть как абсолютными, так и относительными. Относительный путь отсчитывается от файла в котором прописан путь к конфигурации.
+> Регистр символов не важен.
 {: .prompt-tip }
  

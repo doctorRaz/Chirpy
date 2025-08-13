@@ -22,7 +22,7 @@ _Настройки пользовательского интерфейса_
 > ![частичный](partial.png)
 >
 > В nanoCAD есть древняя бага,  при подключении частичного файла меню \
-> nanoCAD скопирует файл \*.cfg в каталог _%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ.х\config\_
+> nanoCAD скопирует файл \*.cfg в каталог `%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ.х\config\` \
 > а файл \*.cuix ленты нет, соответственно лента не будет подгружена. 
 {: .prompt-warning }
 

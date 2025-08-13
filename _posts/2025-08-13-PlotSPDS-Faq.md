@@ -10,6 +10,8 @@ hidden: false
 media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 ---
 
+[скачать](assets/attach/sampleproject.zip){: target="_blank"}
+
 ###  Стили печати 
 
 > При попытке вывести на печать всплывает окно с ошибкой. В чем ошибка?

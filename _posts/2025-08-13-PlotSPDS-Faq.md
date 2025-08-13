@@ -22,7 +22,7 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 
 ![err](Err-stb.png)
 
-> <details><summary>  </summary>
+> <details><summary>Ответ: </summary>
 > <p>
 > 
 > Вы печатаете в именованных стилях, а программа может выводить на печать только в цветозависимых.
@@ -35,7 +35,7 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 
 > В чертеже используются листы А3 книжная и А3 альбомная ориентации, как настроить в шаблоне "правильную" печать?
 
-> <details><summary>Ответ </summary>
+> <details><summary>Ответ: </summary>
 > <p>
 > 
 > Никаких настроек в шаблоне производить не требуется\

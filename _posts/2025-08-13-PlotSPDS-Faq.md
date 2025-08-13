@@ -99,6 +99,7 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > <li> Прописать каталог программы печати в путях поиска AutoCAD </li>
 > <li> Для запуска программы из среды AutoCAD применить такой lisp:<br/>
 > (defun C:пч () (startapp "PlotSPDS.exe") (princ))</li>
+> <ol>
 >
 > </p>
 > </details> 
@@ -118,7 +119,7 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 
 
 
-
+<!--
 
 freelancer26 декабря 2015 г. в 20:45
 "009 15 CBA л_141=A2=Scara monolita S1.pdf"

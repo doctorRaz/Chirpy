@@ -10,7 +10,7 @@ hidden: false
 media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 ---
 
-[скачать](assets/attach/sampleproject.zip){: target="_blank"}
+[скачать]({{ root_url | prepend: site.baseurl}}/assets/attach/sampleproject.zip){: target="_blank"}
 
 ###  Стили печати 
 

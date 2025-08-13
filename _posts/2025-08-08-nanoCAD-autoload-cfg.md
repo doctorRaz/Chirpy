@@ -147,7 +147,7 @@ _nApp.cfg_ или _userdata.cfg_ можно скопировать в любой
 
 Меню будет загружаться во все профили, но в автозагрузке (из под профиля) меню можно отключить
 
-<img width="607"   alt="image" src="https://github.com/user-attachments/assets/03d695dc-4ff2-4060-b4f4-e898026af405" />
+![autolaod-regedit](autolaod-regedit.png)
 
 #### 3. Штатная автозагрузка 
 

@@ -18,7 +18,7 @@ media_subpath: '/assets/img/posts/2025-08-08-autoload-cfg'
 
 ![НПИ](npi.png)
 
-![частичный](partial.png)
+![частичный](partial.png){: .left }
 
 > В nanoCAD есть древняя бага,  при подключении частичного файла меню \
 > nanoCAD скопирует файл \*.cfg в каталог `%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ.х\config\`

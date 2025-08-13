@@ -1,0 +1,143 @@
+---
+title: Как загрузить свое меню и ленту в nanoCAD
+author: doctorraz
+date: 2025-08-08 11:10:00 +0800
+pin: true
+categories: [nanoCAD, hook]
+tags: [nanocad, tools]
+media_subpath: '/assets/img/posts/2025-08-08-autoload'
+---
+
+
+### Способы загрузки
+ 
+#### 1. Через настройки пользовательского интерфейса. 
+
+Самый очевидный и простой способ загрузки меню в nanoCAD 
+
+<img width="1103"  alt="image" src="https://github.com/user-attachments/assets/a5c25992-f1e7-4409-9ee2-ede0bea86b8a" />
+
+<img width="519"   alt="image" src="https://github.com/user-attachments/assets/70cbdd1e-fe13-4522-83a5-96b2a4f01aa9" />
+
+> В nanoCAD есть древняя бага,  при подключении частичного файла меню \
+> nanoCAD скопирует файл \*.cfg в каталог `%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ.х\config\`
+> а файл \*.cuix ленты нет, соответственно лента не будет подгружена. \
+> Все же разбрасывать по всему диску фалы конфигов, настройки ленты и сами аддоны не есть хорошо (
+{: .prompt-warning }
+
+#### 2. Ручная правка nanoCAD.cfg
+
+Дописать в файл настроек _%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ\config\nanoCAD.cfg_ путь к файлу конфигурации: \
+`#include "d:\@Developers\Programmers\!NET\!bundle\BlockFix.bundle\Resources\BlockFix.cfg"`
+
+####  3. Автозагрузка из \*.cfg  nanoCAD
+
+ <img width="783"   alt="image" src="https://github.com/user-attachments/assets/b4ab4017-405a-4eee-a4e2-8b8ca6bc6158" />
+
+ <img width="607"   alt="image" src="https://github.com/user-attachments/assets/5fbe4fd1-b9e7-4ccd-9529-d520b648ef87" />
+
+
+> nanoCAD не умеет напрямую из автозагрузки грузить файлы \*.cfg, поэтому нужен промежуточный файл .package (в кодировке UTF8), в котором в секции `ConfigEntry` прописываем пути к файлам меню (\*.cfg ), в секции `ComponentEntry` пути к загружаемым приложениям:
+> ```xml
+> <?xml version="1.0" encoding="utf-8" ?>
+> <ApplicationPackage xmlns="hostApplicationPackage/v01"
+>                     Name="drzTools">
+> 	<Components>
+> 		<ComponentEntry AppName="BlockFix"
+> 		                ModuleName="/BlockFix.bundle/BlockFix.NCad.dll"
+> 		                ModuleType="MGD"/>
+> 
+> 		<ConfigEntry FileName="/BlockFix.bundle/Resources/BlockFix.cfg"
+> 		             FileType="CFG"/>
+> 	</Components>
+> </ApplicationPackage>
+> ```
+{: .prompt-info }
+
+> Для загрузки способами 1-3 достаточно прав обычного пользователя, повышение прав не требуется.
+{: .prompt-tip }
+
+####  4. Через _nApp.cfg_ или _userdata.cfg_
+
+Создать файл _nApp.cfg_ или _userdata.cfg_  (в кодировке UTF8 BOM) и прописать в него пути к файлам конфигураций: 
+
+`#include "d:\@Developers\Programmers\!NET\!bundle\BlockFix.bundle\Resources\BlockFix.cfg"`
+
+_nApp.cfg_ или _userdata.cfg_ можно скопировать в любой из каталогов:
+- %ProgramFiles%\Nanosoft\nanoCAD x64 ХХ.х\
+- %AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ.х\Config\
+- %ProgramData%\Nanosoft\nanoCAD x64 ХХ.х\Config\
+
+> Для записи и изменения в каталоге:
+> - `%AppData%` повышение прав не требуется
+> - `%ProgramData%\Nanosoft\nanoCAD x64 ХХ.х` у пользователя есть права только на запись, на изменение нет, это значит, что скопировать файл в этот каталог  пользователь сможет, но ни удалить не изменить без повышения прав нет. (хз отчего так сделано)
+> - `%ProgramFiles%\Nanosoft\nanoCAD x64 ХХ.х` нужно повышение прав.
+{: .prompt-warning }
+
+#### 5. Автозагрузка из реестра
+
+ <img width="1378"   alt="image" src="https://github.com/user-attachments/assets/d76a16d3-b972-4d85-94ef-8c3508ec272c" />
+
+В разделе _HKEY_LOCAL_MACHINE\SOFTWARE\Nanosoft\nanoCAD x64\ХХ.х_ 
+добавляем подраздел `Applications`
+в этом подразделе еще один подраздел с названием нашего приложения `BlockFixNC`
+в этом подразделе создаем строковый параметр 
+имя `Package`, значение полный путь до нашего пакета `d:\@Developers\Programmers\!NET\!bundle\BlockFixNC.package`
+
+в автозагрузке это будет выглядеть так:
+
+<img width="607"  alt="image" src="https://github.com/user-attachments/assets/47865e9c-48de-49c1-a807-394d98f274eb" />
+
+> для записи в секцию _HKEY_LOCAL_MACHINE_ требуется повышение прав
+{: .prompt-warning }
+
+### Очередность загрузки
+
+1. %ProgramFiles%\Nanosoft\nanoCAD x64 ХХ\nApp.cfg
+2. %AppData%\Roaming\Nanosoft\nanoCAD x64 23.1\Config\nApp.cfg
+3. %ProgramData%\Nanosoft\nanoCAD x64 ХХ\Config\nApp.cfg
+4. %ProgramFiles%\Nanosoft\nanoCAD x64 ХХ\userdata.cfg
+5. %AppData%\Roaming\Nanosoft\nanoCAD x64 23.1\Config\userdata.cfg
+6. %ProgramData%\Nanosoft\nanoCAD x64 ХХ\Config\userdata.cfg 
+7. %AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ\config\nanoCAD.cfg 
+8. %AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ\config\cfg.cfg (штатная автозагрузка) 
+9. HKEY_LOCAL_MACHINE\SOFTWARE\Nanosoft\nanoCAD x64\ХХ.х\Applications\ (из реестра)
+ 
+> - nApp.cfg всегда загружаются перед userdata.cfg
+> - Если файлы `nApp` или `userdata` скопированы в несколько каталогов, то загрузится только первый одноименный найденный файл, в порядке приведенном выше, остальные файлы грузиться не будут!
+> - `nApp` и `userdata` загружаются независимо друг от друга
+{: .prompt-warning }
+
+все вышенаписанное про порядок загрузки \*.cfg относится и к файлам \*.ini \
+подробнее про загрузку приложений можно почитать у Алексея Кулика [Автозагрузка приложений nanoCAD и ее последовательность](https://autolisp.ru/2023/12/13/nanocad-addon-loading/)
+{: .prompt-tip }
+
+### Особенности загрузки меню
+
+При загрузке меню через:
+1. `nApp`, `userdata` или `nanoCAD.cfg`, меню будет загружено во все профили (платформа, СПДС, Механика) и возможности отключить загрузку в профиле нет, но nanoCAD умеет загружать меню по условию, т.е. если в конфиге загрузки прописать:
+
+```ini
+#include condition="ComponentEnabled_nMechComp" "d:\@Developers\В работе\!Текущее\Programmers\!NET\!bundle\PlotSPDS.bundle\Resources\Mech_menu.cfg"
+#include condition="ComponentEnabled_nSPDSComp" "d:\@Developers\В работе\!Текущее\Programmers\!NET\!bundle\PlotSPDS.bundle\Resources\SPDS_menu.cfg"
+```
+
+то первое меню будет загружаться только в профиль Механика, второе в профиль СПДС.
+допустимы ключевые слова, `or` `not` возможно какие то еще...:
+
+```ini
+#include condition="ComponentEnabled_MODELER3D or ComponentEnabled_MODELER3D_C3D" "nmenu3D.cfg"
+#include condition="not ComponentEnabled_RasterTools"                             "RasterTools.cfg"
+```
+
+2. <kbd>HKEY_LOCAL_MACHINE\SOFTWARE\Nanosoft\nanoCAD x64\ХХ.х\Applications\</kbd> (из реестра)
+меню будет загружаться во все профили, но в автозагрузке (из под профиля) меню можно отключить
+
+<img width="607"   alt="image" src="https://github.com/user-attachments/assets/03d695dc-4ff2-4060-b4f4-e898026af405" />
+
+3. Штатная автозагрузка (%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ\config\cfg.cfg) загрузит меню только в свой профиль
+
+Пути к файлам меню (\*.cfg) могут быть как абсолютными, так и относительными. Относительный путь отсчитывается от файла в котором прописан путь к конфигу.
+Регистр символов не важен.
+{: .prompt-tip }
+ 

@@ -3,7 +3,7 @@ title: PlotSPDS CS (FAQ)
 description: Ответы на частые вопросы по работе с программой.
 author: doctorraz
 date: 2025-08-12 11:33:00 +0800
-categories: [PlotSPDS, others]
+categories: [PlotSPDS, faq]
 tags: [autocad, plotspds]
 pin: true
 hidden: true 
@@ -77,6 +77,17 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > - решение: т.к. у нас есть СПДС, то <i>mcsEnabler</i> не нужен,<br/>
 > при закрытом AutoCAD, надо переименовать файл <b>mcsEnabler.dbx</b>, расположенный в <br/>
 > <i>c:\Program Files\CSoft\СПДС GraphiCS ХХ\mgХxХХ\mcsEnabler.dbx</i></li>
+> <li>Возможно PlotPDS и AutoCAD запущены из под разных учетных записей или с разными правами<br/>
+> - решение: ,br/>
+>     <ol>
+>     <li> Прописать каталог программы печати в путях поиска AutoCAD </li>
+>     <li> Для запуска программы из среды AutoCAD можно применить такой lisp:<br/>
+>     (defun C:пч () (startapp "PlotSPDS.exe") (princ))</li>
+>     </ol>
+> </li>
+>
+>
+>
 > </ol>
 > 
 > </p>

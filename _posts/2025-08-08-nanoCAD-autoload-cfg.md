@@ -4,8 +4,8 @@ description: Несколько способов загрузки
 author: doctorraz
 date: 2025-08-08 11:10:00 +0800
 pin: false
-categories: [nanoCAD, hook]
-tags: [nanocad, tools]
+categories: [nanoCAD, settings]
+tags: [nanocad, settings, levelup]
 media_subpath: '/assets/img/posts/2025-08-08-autoload-cfg'
 ---
 

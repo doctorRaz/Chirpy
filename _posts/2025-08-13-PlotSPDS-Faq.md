@@ -1,6 +1,6 @@
 ---
 title: PlotSPDS CS(FAQ)
-description: Ответы на частые вопросы по печати из программы
+description: Ответы на частые вопросы по работе с программой.
 author: doctorraz
 date: 2025-08-12 11:33:00 +0800
 categories: [PlotSPDS, others]
@@ -10,7 +10,7 @@ hidden: false
 media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 ---
 
-### <kbd>Стили печати</kbd>
+###  Стили печати 
 
 > При попытке вывести на печать всплывает окно с ошибкой. В чем ошибка?
 

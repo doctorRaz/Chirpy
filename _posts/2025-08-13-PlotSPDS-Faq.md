@@ -98,9 +98,7 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 ><ol>
 > <li> Прописать каталог программы печати в путях поиска AutoCAD </li>
 > <li> Для запуска программы из среды AutoCAD применить такой lisp:<br/>
-> <pre>
-> (defun C:пч () (startapp "PlotSPDS.exe") (princ))
-> </pre></li>
+> (defun C:пч () (startapp "PlotSPDS.exe") (princ))</li>
 >
 > </p>
 > </details> 
@@ -115,170 +113,11 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 
  
 
-Unknown14 декабря 2015 г. в 16:11
-Здравствуйте. Хочу повторить вопрос задаваемый раньше. При запуске PLOTSPDS.exe выдается такая ошибка
-AutoCadне запущен! Или с ним нет связи!
-Ошибка: ActiveX component can't create object
-В модуле : PlotSPDS.Ini.Main
-В строке:180
-Номер ошибки: 429
-PlotSPDS будет закрыт
-
-Открывал автокад с ярлыка CGLC Железобетон 2 для Autocad 2015/ Форматы СПДС были созданы на чертеже. Перерегистрация библиотеки МcCOM2.dll и исправление СПДСЖелезобетон эффекта не дали.
-Если не трудно, объясните что делаю не так.
-Заранее благодарю за ответ.
-
-Ответить
-Ответы
-
-doctorraz15 декабря 2015 г. в 10:32
-Ошибки связи с приложениями происходят по причине не нормального функционирования СОМ интерфейса этого объекта.
-Говоря простым языком, Вы скорее всего установили АС 2015, а потом удалили старую версию АС. Естественно все записи в реестре о СОМ АС 2015 оказались повреждены - стерты.
-Проще всего переустановить АС 2015 поверх в режиме восстановления.
-Над более элегантным решением я подумаю.
 
 
-Unknown16 декабря 2015 г. в 18:22
-Переуствновил Автокад в режиме восстановления, результат тот же.
 
 
-doctorraz18 декабря 2015 г. в 10:27
-какая версия Windows?
-Раньше работала печать из программы?
-Что удаляли устанавливали?
-Проверьте запущена ли служба "Система событий COM+"
 
-Ответить
-
-Unknown22 декабря 2015 г. в 20:52
-Андрей, здравствуйте! Спасибо большое за Ваш труд.
-Есть ли техническая возможность, в следующих версиях (когда-нибудь:)) добавить возможность обработки нескольких файлов одновременно. А сортировку в PDF производить например по номеру листа в штампе. Иногда над проектами работает несколько человек... это бы облегчило очень задачу печати и передачу PDF.
-P.S. про работу с подшивками в курсе и используем в своей работе, но не всегда все участники проекта готовы работать таким образом, что накладывает очень сильное ограничение на применение.
-Спасибо еще раз! С наступающим Новым Годом!
-
-Ответить
-Ответы
-
-doctorraz22 декабря 2015 г. в 21:40
-мысли сделать печать из нескольких файлов есть, времени пока нет.
-< А сортировку в PDF производить например по номеру листа в штампе..
-не совсем понял, как надо? сейчас сортирует по обозначению/номеру листа или положению на чертеже.
-==========
-Подшивки в PlotSpds не используются.
-
-
-freelancer24 декабря 2015 г. в 18:45
-vot toje interesuet pechati iz peati otkritih failov :)
-i esheo:
-kogda pechataiu kajdii list v odelinii PDF fail hotel bi chtob imea faila bila "nomer obiekta" + "nomer lista".
-thx.
-
-
-doctorraz24 декабря 2015 г. в 19:21
-насчет печати из нескольких файлов подумаю.
-<"nomer obiekta" что за зверь?? какая графа штампа? и как узнавать этот номер объекта для последующих листов текстовых документов (форма 6)
-
-
-Unknown27 декабря 2015 г. в 23:41
-Спасибо большое! :)
-< А сортировку в PDF производить например по номеру листа в штампе...
-Имелось ввиду вот что:
-файл DWG №1 листы 1,2,3,5,7
-файл DWG №2 листы 4,6,8
-в PDF в итоге все листы по порядку 1-8.
-
-
-doctorraz28 декабря 2015 г. в 08:49
-сейчас так и работает, в пределах шифра (обозначения) документа листы сортируются по порядку.
-
-Ответить
-
-freelancer24 декабря 2015 г. в 21:23
-https://yadi.sk/i/ypZBq_U_mTpcb
-
-da, dlea formi v kotorom net etoi grafi budet problema, no hotiabi nomer lista chtob bil.
-ili tak https://yadi.sk/i/ZuJImWCRmTq6X :)
-
-PS: ranishe ea pechatal kajdii list v odelinii DWF file(imea file-a bilo imea layout-a) i v kontse skomponoval bistro, eto bilo udobno, pri isminenii ea pechatal toliko izmeneonii list.
-A sheas s PlotSPDS takoi vozmojnosti net - no polibomu bistree poluchaetsea :)
-
-Ответить
-Ответы
-
-doctorraz24 декабря 2015 г. в 21:57
-что значит раньше??
-выбираешь Формат-файл и каждый формат в отдельном файле, имя файла это обозначение документа и номер листа. Хоть в pdf, хоть DWF DWFx.
-У тебя штамп нестандартный, сделай по нормальному штамп из стандартного, с правильными именами полей.
-"nomer obiekta" - $Designation$Обозначение
-номер листа - $Sheet$Лист
-и все будет с именами и номерами листов
-=================
-можешь проверить на стандартном формате/штампе
-Ps а если в свой штамп вставишь правильное название чертежа - $Drawing type$Наименование чертежа, то и имя чертежа будет в имени файла ))))
-
-Ответить
-
-freelancer24 декабря 2015 г. в 22:48
-1. ranishe eto do poeavlenia PlotSPDS :)
-2. shtamp u menea standartnii, eto bil drugoi(prosta pokazal gde nomer obiekta).
-3.poproboval sheas ==> "009 15 CBA л_141=Scara monolita S1.pdf" vseo normalino.
-ranishe proboval no bil format bez shtampa, i shtamp vstavlen otelino, poetomu i problema ==> "БЕЗ ОБОЗНАЧЕНИЯ л_1.pdf"
-https://yadi.sk/i/IwSTVBAVmTvp2
-
-vseo ni kak ne dohodeat ruki zdelati format s vertikalinim shtampom, uje motivatsia esti :)
-
-Ответить
-Ответы
-
-freelancer25 декабря 2015 г. в 14:36
-zdesi ranishe imel v vidu uje posle poeavlenia PlotSPDS.
-
-
-freelancer26 декабря 2015 г. в 15:57
-esli nomer lista soderjit "a", "b"... to ih v imea file-a ne otpravleaet.
-https://yadi.sk/i/xmEv_acbmWDgG
-
-
-freelancer26 декабря 2015 г. в 16:02
-ea bi esheo dobavil v imea file-a i format lista
-
-
-doctorraz26 декабря 2015 г. в 17:25
-<esli nomer lista soderjit "a", "b"... to ih v imea file-a ne otpravleaet.
-как номер листа может содержать буквы??? Он же номер )))
-
-
-doctorraz26 декабря 2015 г. в 17:26
-<ea bi esheo dobavil v imea file-a i format lista
-для чего???
-это техническая информация и понять, что в файле никак не помогает
-
-
-freelancer26 декабря 2015 г. в 20:24
-"для чего???"
-chtob bistro vibrati iz napechatanih v PDF file-ov i skomponovati listi raznih formatov dlea raznih printerov.
-
-
-freelancer26 декабря 2015 г. в 20:35
-"как номер листа может содержать буквы??? Он же номер )))"
-dumaiu chto normer mojet soderjati bukvi posle tovo kak iz svoivo karmana napechatal 150 listov A2, a potom dobavilsea isheo odin list, ne budu je ia napechatati opeati vesi komplekt, a toliko pervii(soderjanie) i tot chto dobavilsea. Raznitsa v 50 evro :)
-
-
-doctorraz26 декабря 2015 г. в 20:36
-т.е. напечатать в PDF чтоб в имени файла был размер формата, чтоб удобно было печатать из PDF?
-подумаю, может добавлю галку: добавлять имя формата.
-
-
-freelancer26 декабря 2015 г. в 20:39
-"галку" da, da. da
-
-
-doctorraz26 декабря 2015 г. в 20:43
-а нумеровать добавленные листы 1.1, 10,5 не пойдет???
-дело в том, что если в номере листа будут буквы, то это не число , а текст со всеми вытекающими.
-т.е. сортировка будет 1,10,2,3, оно стоит того??? тогда в многостраничном PDF листы будут перепутаны.
-======
-подумаю со временем, что можно сделать.
 
 
 freelancer26 декабря 2015 г. в 20:45

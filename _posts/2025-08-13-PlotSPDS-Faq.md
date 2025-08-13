@@ -10,7 +10,7 @@ hidden: true
 media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 ---
 
-> статья сильно не закончена!
+> Статья сильно не закончена!
 {: .prompt-danger }
 
 ###  Стили печати 
@@ -104,10 +104,6 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > (defun C:пч () (startapp "PlotSPDS.exe") (princ))</li>
 > </ol>
 >
-> <!-- markdownlint-enable -->
-> ```csharp
-> string str="test"
-> ```
 > </p>
 > </details> 
 {: .prompt-info }

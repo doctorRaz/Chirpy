@@ -16,9 +16,9 @@ media_subpath: '/assets/img/posts/2025-08-08-autoload-cfg'
 
 Самый очевидный и простой способ загрузки меню в nanoCAD 
 
-![НПИ](нпи.png)
+![НПИ](npi.png)
 
-![частичный](частичный.png){: .w-50 .left}
+![частичный](partial.png)
 
 > В nanoCAD есть древняя бага,  при подключении частичного файла меню \
 > nanoCAD скопирует файл \*.cfg в каталог `%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ.х\config\`

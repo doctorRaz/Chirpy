@@ -9,14 +9,14 @@
 
 .book-entry {
   display: grid;
-  grid-template-columns: 270px 1fr;
+  grid-template-columns: 205px 1fr;
   gap: 1.5rem;
   padding-bottom: 15px;
   position: relative;
 }
 
 .thumbnail {
-  width: 250px;
+  width: 200px;
   height: auto;
   margin: 0.5rem 0 0.25rem 1rem;
 }
@@ -75,7 +75,7 @@ main h2 {
   }
 
   .thumbnail {
-    width: 250px;
+    width: 200px;
     height: auto;
     margin: 0.5rem 0 0.25rem 1rem;
   }

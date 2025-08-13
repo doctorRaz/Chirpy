@@ -69,7 +69,9 @@ _Настройки пользовательского интерфейса_
 
 Создать файл _nApp.cfg_ или _userdata.cfg_  (в кодировке UTF8 BOM) и прописать в него пути к файлам конфигураций: 
 
-`#include "d:\@Developers\Programmers\!NET\!bundle\BlockFix.bundle\Resources\BlockFix.cfg"`
+```
+#include "d:\@Developers\Programmers\!NET\!bundle\BlockFix.bundle\Resources\BlockFix.cfg"
+```
 
 _nApp.cfg_ или _userdata.cfg_ можно скопировать в любой из каталогов:
 - %ProgramFiles%\Nanosoft\nanoCAD x64 ХХ.х\
@@ -84,7 +86,7 @@ _nApp.cfg_ или _userdata.cfg_ можно скопировать в любой
 
 #### 5. Автозагрузка из реестра
 
- <img width="1378"   alt="image" src="https://github.com/user-attachments/assets/d76a16d3-b972-4d85-94ef-8c3508ec272c" />
+ ![regedit](regedit.png)
 
 В разделе _HKEY_LOCAL_MACHINE\SOFTWARE\Nanosoft\nanoCAD x64\ХХ.х_ 
 добавляем подраздел `Applications`
@@ -94,7 +96,7 @@ _nApp.cfg_ или _userdata.cfg_ можно скопировать в любой
 
 в автозагрузке это будет выглядеть так:
 
-<img width="607"  alt="image" src="https://github.com/user-attachments/assets/47865e9c-48de-49c1-a807-394d98f274eb" />
+![autolaod-regedit](autolaod-regedit.png)
 
 > для записи в секцию _HKEY_LOCAL_MACHINE_ требуется повышение прав
 {: .prompt-warning }

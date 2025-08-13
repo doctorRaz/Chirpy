@@ -3,7 +3,7 @@ title: Как загрузить свое меню и ленту в nanoCAD
 description: Несколько способов загрузки
 author: doctorraz
 date: 2025-08-08 11:10:00 +0800
-pin: true
+pin: false
 categories: [nanoCAD, hook]
 tags: [nanocad, tools]
 media_subpath: '/assets/img/posts/2025-08-08-autoload-cfg'

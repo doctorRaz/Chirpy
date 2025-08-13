@@ -1,11 +1,12 @@
 ---
 title: Как загрузить свое меню и ленту в nanoCAD
+description: Несколько способов загрузки меню и ленты
 author: doctorraz
 date: 2025-08-08 11:10:00 +0800
 pin: true
 categories: [nanoCAD, hook]
 tags: [nanocad, tools]
-media_subpath: '/assets/img/posts/2025-08-08-autoload'
+media_subpath: '/assets/img/posts/2025-08-08-autoload-cfg'
 ---
 
 
@@ -15,7 +16,7 @@ media_subpath: '/assets/img/posts/2025-08-08-autoload'
 
 Самый очевидный и простой способ загрузки меню в nanoCAD 
 
-<img width="1103"  alt="image" src="https://github.com/user-attachments/assets/a5c25992-f1e7-4409-9ee2-ede0bea86b8a" />
+[НПИ](нпи.png)
 
 <img width="519"   alt="image" src="https://github.com/user-attachments/assets/70cbdd1e-fe13-4522-83a5-96b2a4f01aa9" />
 

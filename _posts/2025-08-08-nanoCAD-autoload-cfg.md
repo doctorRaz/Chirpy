@@ -125,14 +125,17 @@ _nApp.cfg_ или _userdata.cfg_ можно скопировать в любой
 ### Особенности загрузки меню
 
 При загрузке меню через:
-1. `nApp`, `userdata` или `nanoCAD.cfg`, меню будет загружено во все профили (платформа, СПДС, Механика) и возможности отключить загрузку в профиле нет, но nanoCAD умеет загружать меню по условию, т.е. если в конфиге загрузки прописать:
+
+#### 1. `nApp`, `userdata` или `nanoCAD.cfg`, 
+
+меню будет загружено во все профили (платформа, СПДС, Механика) и возможности отключить загрузку в профиле нет, но nanoCAD умеет загружать меню по условию, т.е. если в конфиге загрузки прописать:
 
 ```ini
 #include condition="ComponentEnabled_nMechComp" "d:\@Developers\В работе\!Текущее\Programmers\!NET\!bundle\PlotSPDS.bundle\Resources\Mech_menu.cfg"
 #include condition="ComponentEnabled_nSPDSComp" "d:\@Developers\В работе\!Текущее\Programmers\!NET\!bundle\PlotSPDS.bundle\Resources\SPDS_menu.cfg"
 ```
 
-то первое меню будет загружаться только в профиль Механика, второе в профиль СПДС.
+то первое меню будет загружаться только в профиль Механика, второе в профиль СПДС.\
 допустимы ключевые слова, `or` `not` возможно какие то еще...:
 
 ```ini
@@ -140,12 +143,15 @@ _nApp.cfg_ или _userdata.cfg_ можно скопировать в любой
 #include condition="not ComponentEnabled_RasterTools"                             "RasterTools.cfg"
 ```
 
-2. `HKEY_LOCAL_MACHINE\SOFTWARE\Nanosoft\nanoCAD x64\ХХ.х\Applications\` (из реестра)
+#### 2. `HKEY_LOCAL_MACHINE\SOFTWARE\Nanosoft\nanoCAD x64\ХХ.х\Applications\` (из реестра)
+
 меню будет загружаться во все профили, но в автозагрузке (из под профиля) меню можно отключить
 
 <img width="607"   alt="image" src="https://github.com/user-attachments/assets/03d695dc-4ff2-4060-b4f4-e898026af405" />
 
-3. Штатная автозагрузка (%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ\config\cfg.cfg) загрузит меню только в свой профиль
+#### 3. Штатная автозагрузка 
+
+(%AppData%\Roaming\Nanosoft\nanoCAD x64 ХХ\config\cfg.cfg) загрузит меню только в свой профиль
 
 > Пути к файлам меню (\*.cfg) могут быть как абсолютными, так и относительными. Относительный путь отсчитывается от файла в котором прописан путь к конфигурации.
 > Регистр символов не важен.

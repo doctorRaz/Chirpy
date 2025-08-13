@@ -16,7 +16,7 @@ media_subpath: '/assets/img/posts/2025-08-08-autoload-cfg'
 
 Самый очевидный и простой способ загрузки меню в nanoCAD 
 
-[НПИ](нпи.png)
+![НПИ](нпи.png)
 
 <img width="519"   alt="image" src="https://github.com/user-attachments/assets/70cbdd1e-fe13-4522-83a5-96b2a4f01aa9" />
 

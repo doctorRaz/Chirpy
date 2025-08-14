@@ -470,7 +470,7 @@ Burm4 мая 2021 г. в 13:24
 > <details><summary>Ответ: </summary>
 > <p>
 > 
-> Предлагаю проверить файл на <b><a href="https://www. virustotal. com/gui/home/upload" target="_blank">virustotal</a></b><br>
+> Предлагаю проверить файл на <b><a href="https://www.virustotal.com/gui/home/upload" target="_blank">virustotal</a></b><br>
 > Если и там определит, как вирус, то лучше не пользоваться программой а печатать руками. 
 >
 > </p>

@@ -370,7 +370,7 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 > <details><summary>Ответ: </summary>
 > <p>
 > 
-> PlotPDS печатает форматы в соответствии с <b><a href="http://docs.cntd.ru/document/gost-2-301-68-eskd" target="_blank">ГОСТ 2.301-68 (Основные и производные форматы)</a></b><br>
+> PlotPDS печатает форматы в соответствии с <b><a href="https://docs.cntd.ru/document/gost-2-301-68-eskd" target="_blank">ГОСТ 2.301-68 (Основные и производные форматы)</a></b><br>
 > Не вижу смысла добавлять в программу функционал назначения произвольного формата (не по ГОСТ)
 >
 > </p>

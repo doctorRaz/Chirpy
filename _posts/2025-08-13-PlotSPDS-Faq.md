@@ -6,7 +6,7 @@ date: 2025-08-12 11:33:00 +0800
 categories: [PlotSPDS, FAQ AutoCAD]
 tags: [autocad, plotspds]
 pin: false
-hidden: true 
+hidden: false
 media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 ---
 

@@ -4,7 +4,7 @@ description: Ответы на частые вопросы по работе с 
 author: doctorraz
 date: 2025-08-12 11:33:00 +0800
 categories: [PlotSPDS, FAQ AutoCAD]
-tags: [autocad, plotspds]
+tags: [autocad, plotspds, faq]
 pin: false
 hidden: false
 media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'

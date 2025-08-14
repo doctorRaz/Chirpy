@@ -197,19 +197,19 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > <p>
 >
 > <ol>
-> <li>кнопка или пункт меню:  </br>
-> <i>^C^C(startapp "PlotSPDS") </i><li/>
-> <li> лисп на алиас кнопок: </br>
+> <li>кнопка или пункт меню:  <br/>
+> <i>^C^C(startapp "PlotSPDS") </i> <li/>
+> <li> лисп на алиас кнопок: <br/>
 > <pre>
 > (defun C:пч()
 > (startapp "PlotSPDS.exe")
 > (princ)
 > )
-><pre/>
+> <pre/>
 > PlotSPDS.exe скопировать  в каталог путей поиска файлов AutoCAD, (рабочих, вспомогательных, доверенных)
 >  или добавить путь в пути поиска
 > </li>
-></ol>
+> </ol>
 > 
 > </p>
 > </details> 
@@ -220,13 +220,13 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 ### Настройки.Не запускается с кнопки
 
 Вопрос:
-> При запуске с кнопки возвращает - Команда: (startapp "PlotSPDS") nil
+> При запуске с кнопки возвращает - Команда: (startapp "PlotSPDS") nil\
 > При запуске с иконки программы - все нормально
 
 > <details><summary>Ответ: </summary>
 > <p>
 > 
-> прописать папку с PlotSPDS в пути поиска AutoCAD и перезапустить.
+> Прописать папку с PlotSPDS в пути поиска AutoCAD и перезапустить.<br/>
 > или скопировать программу в каталог который уже есть в путях поиска AutoCAD
 >
 > </p>

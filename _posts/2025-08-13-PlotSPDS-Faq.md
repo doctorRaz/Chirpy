@@ -464,13 +464,13 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 {: .prompt-info }
 
 
-### Твики. Как восстановить регистрацию СПДС
+### Твики. Регистрация McCom2
 
 > В командной строке вводим:
 > ```bat
 > regsvr32 "c:\Program Files\CSoft\СПДС GraphiCS 2024 x64\mg143x64\McCOM2.dll"
 > ```
-> Путь до`McCOM2.dll` надо заменить на свойствам \
+> Путь до`McCOM2.dll` надо заменить на свой \
 > После регистрации библиотеки подключение программы к СПДС должно восстановиться.
 {: .prompt-tip }
 

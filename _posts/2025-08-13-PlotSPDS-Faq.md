@@ -2,7 +2,7 @@
 title: PlotSPDS CS (FAQ)
 description: Ответы на частые вопросы по работе с программой. 
 author: doctorraz
-date: 2025-08-12 11:00:00 +0000
+date: 2025-08-12 11:00:00 -0300
 categories: [AutoCAD, PlotSPDS]
 tags: [autocad, plotspds, faq]
 pin: false

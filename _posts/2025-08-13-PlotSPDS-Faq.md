@@ -21,8 +21,8 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > При запуске не от имени администратора выдает следующее:
 > ```
 > Run-time error '-2147024703 (800700c1)'
-> Automatiom error
-> %1 is not a valid Win32 app;ication
+> Automation error
+> %1 is not a valid Win32 application
 > ```
 > При запуске от имени администратора пишет:
 > ```
@@ -41,7 +41,7 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > - решение: запускать СПДС только родным ярлыком программы. </li>
 > <li> Была удалена <b> предыдущая </b> версия СПДС, ПОСЛЕ установки более новой версии. <br/>
 > - решение: заново зарегистрировать библиотеку МcCOM2.dll, или переустановить СПДС. </li>
-> <li> Запускается энаблер СПДС и не позволяет подключиться к серверу МcCOM2. <br/>
+> <li> Запускается enabler СПДС и не позволяет подключиться к серверу МcCOM2. <br/>
 > - решение: т.к. у нас есть СПДС, то <i>mcsEnabler</i> не нужен,<br/>
 > при закрытом AutoCAD, надо переименовать файл <b>mcsEnabler.dbx</b>, расположенный в <br/>
 > <i>c:\Program Files\CSoft\СПДС GraphiCS ХХ\mgХxХХ\mcsEnabler.dbx</i></li>
@@ -407,25 +407,33 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 > <li> Отключить в AuoCAD фоновую публикацию
 > </li>
 > </ul>
->
+> Что то из этого должно помочь.
 > </p>
 > </details> 
 {: .prompt-info }
  
-<!--
+## Не работает. Subscript out of range
 
-Burm4 мая 2021 г. в 13:24
-Ошибка:Subscript out of range
-В модуле PlotSPDS. Uils_ModCLS. GetArrKeyVal
-Номер ошибки: 9
+Вопрос:
+> Ошибка:
+> ```Subscript out of range
+> В модуле PlotSPDS. Uils_ModCLS. GetArrKeyVal
+> Номер ошибки: 9
+> ```
 
-Ответить
-Ответы
+> <details><summary>Ответ: </summary>
+> <p>
+>
+> Некорректно удален шаблон. 
+> см. <a href="#печать-удален-шаблон">Удален шаблон</a>
+>
+> </p>
+> </details> 
+{: .prompt-info }
 
-Андрей4 мая 2021 г. в 13:42
-Возможно некорректно удален шаблон. 
-Если повторяется пишите мне на почту. Будем чинить
+ 
 ------------------------------------------------------
+<!--
 Антон18 февраля 2022 г. в 11:58
 Можно ли адаптировать ПЛОТСПДС для ZWCAD 2021 с СПДС GraphiCS 2022 ?
 

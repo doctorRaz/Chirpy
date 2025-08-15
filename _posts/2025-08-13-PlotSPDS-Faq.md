@@ -13,7 +13,7 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 ### Не работает. Subscript out of range
 
 Вопрос:
-> Ошибка:\
+> Ошибка:
 > ```
 > Subscript out of range
 > В модуле PlotSPDS. Uils_ModCLS. GetArrKeyVal
@@ -466,7 +466,7 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 
 ### Твики. Как восстановить регистрацию СПДС
 
-> В командной строке вводим: \
+> В командной строке вводим:
 > ```
 > regsvr32 "полный путь до McCOM2.dll"
 > ```

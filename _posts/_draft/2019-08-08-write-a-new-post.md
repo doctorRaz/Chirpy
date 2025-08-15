@@ -1,7 +1,7 @@
 ---
 title: Writing a New Post
 author: cotes
-date: 2019-08-08 14:10:00 +0300
+date: 2019-08-08 14:10:00 +0800
 categories: [Blogging, Tutorial]
 tags: [writing]
 render_with_liquid: false
@@ -31,7 +31,7 @@ tags: [TAG]     # TAG names should always be lowercase
 
 ### Timezone of Date
 
-To accurately record the release date of a post, you should not only set up the `timezone` of `_config.yml`{: .filepath} but also provide the post's timezone in variable `date` of its Front Matter block. Format: `+/-TTTT`, e.g. `+0300`.
+To accurately record the release date of a post, you should not only set up the `timezone` of `_config.yml`{: .filepath} but also provide the post's timezone in variable `date` of its Front Matter block. Format: `+/-TTTT`, e.g. `+0800`.
 
 ### Categories and Tags
 

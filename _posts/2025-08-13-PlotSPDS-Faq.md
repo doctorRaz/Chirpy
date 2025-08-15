@@ -215,8 +215,6 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > </details> 
 {: .prompt-info }
 
-
-
 ### Настройки. Не запускается с кнопки
 
 Вопрос:
@@ -275,7 +273,7 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 > </details> 
 {: .prompt-info }
 
-### Печать. Нестандартные размеры листа
+### Печать. дополнительные размеры листа
 
 Вопрос:
 
@@ -359,7 +357,7 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 > </details> 
 {: .prompt-info }
 
-### Печать. 
+### Печать. Размер листа не по ГОСТ
 
 Вопрос:
 > А есть ли какая нибудь инструкция как научить программу печатать нестандартные размеры листов? \

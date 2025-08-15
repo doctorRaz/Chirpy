@@ -10,8 +10,24 @@ hidden: false
 media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 ---
 
-> Статья сильно не закончена!
-{: .prompt-danger }
+### Не работает. Subscript out of range
+
+Вопрос:
+> Ошибка:
+> ```Subscript out of range
+> В модуле PlotSPDS. Uils_ModCLS. GetArrKeyVal
+> Номер ошибки: 9
+> ```
+
+> <details><summary>Ответ: </summary>
+> <p>
+>
+> Некорректно удален шаблон. 
+> см. <a href="#печать-удален-шаблон">Удален шаблон</a>
+>
+> </p>
+> </details> 
+{: .prompt-info }
 
 ### Не работает. Ошибка подключения. 
 
@@ -291,7 +307,7 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 > </details> 
 {: .prompt-info }
 
-### Печать. дополнительные размеры листа
+### Печать. Дополнительные размеры листа
 
 Вопрос:
 
@@ -411,46 +427,23 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 > </p>
 > </details> 
 {: .prompt-info }
- 
-## Не работает. Subscript out of range
+
+### Прочее. PlotSPDS для других CAD
 
 Вопрос:
-> Ошибка:
-> ```Subscript out of range
-> В модуле PlotSPDS. Uils_ModCLS. GetArrKeyVal
-> Номер ошибки: 9
-> ```
+> Можно ли адаптировать ПЛОТСПДС для ZWCAD 2021 с СПДС GraphiCS 2022 или nanoCAD?
 
-> <details><summary>Ответ: </summary>
-> <p>
->
-> Некорректно удален шаблон. 
-> см. <a href="#печать-удален-шаблон">Удален шаблон</a>
->
-> </p>
-> </details> 
-{: .prompt-info }
-
- 
-------------------------------------------------------
-<!--
-Антон18 февраля 2022 г. в 11:58
-Можно ли адаптировать ПЛОТСПДС для ZWCAD 2021 с СПДС GraphiCS 2022 ?
-
-Ответить
-Ответы
-
-Андрей18 февраля 2022 г. в 15:29
-Можно, но сейчас занимаюсь PlotSPDS для nanoCAD СПДС
+Можно, но сейчас занимаюсь PlotSPDS 
 
 > <details><summary>Ответ: </summary>
 > <p>
 > 
+> Для nanoCAD СПДС см . <b> <a href="https://doctorraz.blogspot.com/2022/10/PlotSPDS.NET.html">PlotSPDS.NET</a></b><br>
+> Для других CAD возможно когда-нибудь
 >
 > </p>
 > </details> 
 {: .prompt-info }
--->
 
 ### Прочее. Ругается антивирус
 

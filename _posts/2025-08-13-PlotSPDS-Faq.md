@@ -2,7 +2,7 @@
 title: PlotSPDS CS (FAQ)
 description: Ответы на частые вопросы по работе с программой. 
 author: doctorraz
-date: 2025-08-12 11:33:00 +0800
+date: 2025-08-12 11:00:00 +0000
 categories: [AutoCAD, PlotSPDS]
 tags: [autocad, plotspds, faq]
 pin: false
@@ -385,7 +385,7 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 > <details><summary>Ответ: </summary>
 > <p>
 > 
-> PlotPDS печатает форматы в соответствии с <b><a href="https://docs.cntd.ru/document/gost-2-301-68-eskd" target="_blank">ГОСТ 2.301-68 (Основные и производные форматы)</a></b>
+> PlotPDS печатает форматы в соответствии с <b><a href="https://docs.cntd.ru/document/gost-2-301-68-eskd" target="_blank">ГОСТ 2.301-68 (Основные и производные форматы)</a></b><br>
 > Не вижу смысла добавлять в программу функционал назначения произвольного формата (не по ГОСТ)
 >
 > </p>
@@ -448,7 +448,7 @@ Burm4 мая 2021 г. в 13:24
 
 Вопрос:
 
-> Встроенный защитник Win10 находит вирус. 
+> Встроенный защитник Win10 находит вирус. \
 > `Обнаружено: Trojan:Script/Wacatac. B!ml`
 
 > <details><summary>Ответ: </summary>

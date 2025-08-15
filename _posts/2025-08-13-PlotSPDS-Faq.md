@@ -13,7 +13,7 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > Статья сильно не закончена!
 {: .prompt-danger }
 
-### Не работает программа. Ошибка подключения. 
+### Не работает. Ошибка подключения. 
 
 Вопрос:
 > Добрый день такая проблема при запуске файла. 
@@ -59,7 +59,7 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > </details> 
 {: .prompt-info }
 
-### Не работает программа. Не находит форматы. 
+### Не работает. Не находит форматы. 
 
 Вопрос:
 > Запускаю PlotPDS.exe, пишет 
@@ -79,7 +79,7 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > </details> 
 {: .prompt-info }
 
-### Не работает программа. Необходимо обновление.
+### Не работает. Необходимо обновление.
 
 Вопрос:
 > PlotSPDS для AutoCAD 2008-2016 + СПДС CS 7, 8.0 не запускается:
@@ -91,7 +91,7 @@ media_subpath: '/assets/img/posts/2025-08-13-PlotSPDS-Faq'
 > <details><summary>Ответ: </summary>
 > <p>
 > 
-> О прекращении поддержки СПДС 8.0 и более старых я оповестил еще три года назад. <br>
+> Поддержка СПДС 8.0 и более старых версий прекращена окончательно.
 >
 > </p>
 > </details> 
@@ -403,7 +403,7 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 > <ul>
 > <li> <img   alt="image" src="Disable-Regen-dwg.png" /> <br>
 > <i> Снять чекбокс.</i> </li>
-> или
+> <br> или
 > <li> Отключить в AuoCAD фоновую публикацию
 > </li>
 > </ul>

@@ -5,6 +5,8 @@ author: doctorraz
 date: 2025-08-08 11:10:00 +0300
 categories: [nanoCAD, settings]
 tags: [nanocad, settings, levelup]
+pin: false
+hidden: false
 media_subpath: '/assets/img/posts/2025-08-08-autoload-cfg'
 ---
 

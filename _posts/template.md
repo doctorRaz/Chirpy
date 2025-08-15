@@ -6,6 +6,7 @@ date: 2019-08-08 11:33:00 +0300
 categories: [nanoCAD, hook]
 tags: [nanocad, tools]
 pin: false
+hidden: false
 math: true
 mermaid: true
 image:

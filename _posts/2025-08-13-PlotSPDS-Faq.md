@@ -402,7 +402,7 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 > <p>
 > <ul>
 > <li> <img   alt="image" src="Disable-Regen-dwg.png" /> <br>
-> <i> Снять чекбокс.</i> </li>
+> <p align="center" ><i> Снять чекбокс.</i></p> </li>
 > <br> или
 > <li> Отключить в AuoCAD фоновую публикацию
 > </li>

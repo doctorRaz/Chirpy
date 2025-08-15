@@ -467,10 +467,11 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 ### Твики. Как восстановить регистрацию СПДС
 
 > В командной строке вводим:
+> ```bat
+> regsvr32 "c:\Program Files\CSoft\СПДС GraphiCS 2024 x64\mg143x64\McCOM2.dll"
 > ```
-> regsvr32 "полный путь до McCOM2.dll"
-> ```
-> `McCOM2.dll` - лежит в %ProgramFiles%/CSoft/СПДС GraphiCS XXX/ 
+> Путь до`McCOM2.dll` надо заменить на свойствам \
+> После регистрации библиотеки подключение программы к СПДС должно восстановиться.
 {: .prompt-tip }
 
 ### Твики. Как отключить Enabler
@@ -478,10 +479,10 @@ https://drive.google.com/open?id=1F3RmI3DSbx0gKp2etcGqAfNo_p66RsFz
 > Необходимы права администратора
  {: .prompt-danger }
  
-> 
-> 
-> 
-> 
+> При закрытом AuoCAD переходим в каталог: \
+> `c:\Program Files\CSoft\СПДС GraphiCS 2024 x64\mg143x64\` (заменить на свой путь)\
+> Переименовываем `mcsEnabler.dbx` например на `mcsEnabler.dbx_`\
+> Enabler больше не будет блокировать работу `McCOM2`
 {: .prompt-tip }
 
 
